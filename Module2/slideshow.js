@@ -19,7 +19,31 @@ window.onload = function (){
             {
                 imageToggle -= 1;
             }
-            checkImage(imageToggle);
+            if(imageToggle == 5)
+            {
+                document.getElementById('images').src = "https://i.pinimg.com/originals/ac/80/55/ac805547f8cce6339f4656c4eb8e6abb.jpg";
+            }
+            if(imageToggle == 4)
+            {
+                m_image.setAttribute("src", "image/newYorkCity.jpg");
+                //document.getElementById('images').src = "image/newYorkCity.jpg";
+            }
+            if(imageToggle == 3)
+            {
+                m_image.setAttribute("src", "image/memorialStadium.jpg");
+                //document.getElementById('images').src = "image/memorialStadium.jpg";
+            }
+            if(imageToggle == 2)
+            {
+                m_image.setAttribute("src", "image/polarBears.jpg");
+                //document.getElementById('images').src = "image/polarBears.jpg";
+            }
+            if(imageToggle == 1)
+            {
+                m_image.setAttribute("src", "image/beaches.jpg");
+                //document.getElementById('images').src = "image/beaches.jpg";
+            }
+            console.log("image toggle: " + imageToggle);
         }
         
         function next() {
@@ -32,34 +56,59 @@ window.onload = function (){
                 imageToggle += 1;
             }
             //console.log("image toggle : " + imageToggle);
-            checkImage(imageToggle);
-        }
-
-        function checkImage(toggleNumber) {
-            if(toggleNumber = 5)
+            //checkImage(imageToggle);
+            if(imageToggle == 5)
             {
                 document.getElementById('images').src = "https://i.pinimg.com/originals/ac/80/55/ac805547f8cce6339f4656c4eb8e6abb.jpg";
             }
-            if(toggleNumber = 4)
+            if(imageToggle == 4)
             {
                 m_image.setAttribute("src", "image/newYorkCity.jpg");
                 //document.getElementById('images').src = "image/newYorkCity.jpg";
             }
-            if(toggleNumber = 3)
+            if(imageToggle == 3)
             {
                 m_image.setAttribute("src", "image/memorialStadium.jpg");
                 //document.getElementById('images').src = "image/memorialStadium.jpg";
             }
-            if(toggleNumber = 2)
+            if(imageToggle == 2)
             {
                 m_image.setAttribute("src", "image/polarBears.jpg");
                 //document.getElementById('images').src = "image/polarBears.jpg";
             }
-            if(toggleNumber = 1)
+            if(imageToggle == 1)
             {
                 m_image.setAttribute("src", "image/beaches.jpg");
                 //document.getElementById('images').src = "image/beaches.jpg";
             }
-            console.log("image toggle: " + toggleNumber);
-        }      
+            console.log("image toggle: " + imageToggle);
+        }
+
+        /*function checkImage(imageToggle) {
+            if(imageToggle = 5)
+            {
+                document.getElementById('images').src = "https://i.pinimg.com/originals/ac/80/55/ac805547f8cce6339f4656c4eb8e6abb.jpg";
+            }
+            if(imageToggle = 4)
+            {
+                m_image.setAttribute("src", "image/newYorkCity.jpg");
+                //document.getElementById('images').src = "image/newYorkCity.jpg";
+            }
+            if(imageToggle = 3)
+            {
+                m_image.setAttribute("src", "image/memorialStadium.jpg");
+                //document.getElementById('images').src = "image/memorialStadium.jpg";
+            }
+            if(imageToggle = 2)
+            {
+                m_image.setAttribute("src", "image/polarBears.jpg");
+                //document.getElementById('images').src = "image/polarBears.jpg";
+            }
+            if(imageToggle = 1)
+            {
+                m_image.setAttribute("src", "image/beaches.jpg");
+                //document.getElementById('images').src = "image/beaches.jpg";
+            }
+            console.log("image toggle: " + imageToggle);
+        }*/  
 }
