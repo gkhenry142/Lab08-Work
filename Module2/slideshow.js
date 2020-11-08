@@ -7,11 +7,10 @@ window.onload = function (){
 
         m_previousButton.addEventListener('click', previous);
         m_nextButton.addEventListener('click', next);
-        m_previousButton.addEventListener('click', checkImage);
-        m_nextButton.addEventListener('click', checkImage);
+        //m_previousButton.addEventListener('click', checkImage);
+        //m_nextButton.addEventListener('click', checkImage);
 
         function previous() {
-            document.getElementById('images').src = "image/breckenridge.jpg";
             if(imageToggle == 1)
             {
                 imageToggle = 5;
@@ -20,7 +19,6 @@ window.onload = function (){
             {
                 imageToggle -= 1;
             }
-            console.log("image toggle: " + imageToggle);
             checkImage(imageToggle);
         }
         
@@ -33,34 +31,35 @@ window.onload = function (){
             {
                 imageToggle += 1;
             }
-            console.log("image toggle : " + imageToggle);
+            //console.log("image toggle : " + imageToggle);
             checkImage(imageToggle);
         }
 
-        function checkImage(imageToggle) {
-            if(imageToggle = 5)
+        function checkImage(toggleNumber) {
+            if(toggleNumber = 5)
             {
-                document.getElementById("images").src = "https://i.pinimg.com/originals/ac/80/55/ac805547f8cce6339f4656c4eb8e6abb.jpg";
+                document.getElementById('images').src = "https://i.pinimg.com/originals/ac/80/55/ac805547f8cce6339f4656c4eb8e6abb.jpg";
             }
-            if(imageToggle = 4)
+            if(toggleNumber = 4)
             {
                 m_image.setAttribute("src", "image/newYorkCity.jpg");
                 //document.getElementById('images').src = "image/newYorkCity.jpg";
             }
-            if(imageToggle = 3)
+            if(toggleNumber = 3)
             {
                 m_image.setAttribute("src", "image/memorialStadium.jpg");
                 //document.getElementById('images').src = "image/memorialStadium.jpg";
             }
-            if(imageToggle = 2)
+            if(toggleNumber = 2)
             {
                 m_image.setAttribute("src", "image/polarBears.jpg");
                 //document.getElementById('images').src = "image/polarBears.jpg";
             }
-            if(imageToggle = 1)
+            if(toggleNumber = 1)
             {
                 m_image.setAttribute("src", "image/beaches.jpg");
                 //document.getElementById('images').src = "image/beaches.jpg";
             }
+            console.log("image toggle: " + toggleNumber);
         }      
 }
