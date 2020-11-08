@@ -1,0 +1,50 @@
+body{
+    background-color: lightblue;
+    background-image: url('https://www.planetware.com/photos-large/USKS/wichita-attractions-keeper-of-the-plains.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#imageAlign{
+    text-align: center;
+}
+#wichitaFacts{
+    text-align: left;
+    margin-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#biographicalParagraph{
+    text-align: left;
+    margin-left: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#airCapital {
+    color: darkred;
+}
+#youtubeVideo {
+    text-align: center;
+}
+#bp4:hover
+{
+    background-color: lightgray;
+    color: blue
+}
+#bp3:hover
+{
+    background-color: lightgray;
+    color: blue 
+}
+#bp2:hover
+{
+    background-color: lightgray;
+    color: blue    
+}
+#bp1:hover
+{
+    background-color: lightgray;
+    color: blue
+}
